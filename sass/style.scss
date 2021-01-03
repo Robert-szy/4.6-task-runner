@@ -1,14 +1,12 @@
 /*Variables*/
-$color-main: #7bed9f;
-$color-second: #ff6b81;
-$color-third: #70a1ff;
-$color-dark: #747d8c;
+
+$color-dark: #222222;
 $color-light: #ffffff;
 
-$font-text: 'Inconsolata', monospace;
-$font-header: 'Signika', sans-serif;
-
-$transition: all 1s;
+$font-logo: 'Rouge Script', cursive;
+$font-title: 'Montserrat', sans-serif;
+$font-subtitle: 'Noto Serif', serif;
+$font-text: 'Roboto Slab', serif;
 
 /*Global*/
 *, *::before, *::after {
@@ -20,9 +18,21 @@ body {
     font-size: 16px;
     line-height: 1.7;
     font-family: $font-text;
-    text-align: left;
-    background: #fff;
+    text-align: center;
+    background: $color-light;
     color: $color-dark;
+}
+
+.page-title {
+    font-size: 58px;
+    margin: 0 0 72px 0;
+    font-family: $font-title;
+}
+
+.page-subtitle {
+    font-size: 15px;
+    margin: 10px 0 50px 0;
+    font-family: $font-subtitle;
 }
 
 section {
@@ -31,7 +41,6 @@ section {
 }
 
 .container {
-    max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -39,17 +48,6 @@ section {
 .row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.section-title {
-    font-size: 48px;
-    margin: 0 0 72px 0;
-}
-
-.section-subtitle {
-    font-size: 20px;
-    margin: 10px 0 0px 0;
 }
 
 .btn {
@@ -72,5 +70,47 @@ section {
 .btn:hover {
     background-position: 0 100%; 
     color: $color-light;
-    transition: $transition;
 }
+
+/*Splash*/
+
+.splash {
+    min-height: 700px;
+    display: flex;
+    .splash-inner {
+        margin: auto;    
+        max-width: 100%;
+        position: relative;
+        .row {
+            flex-direction: column;
+            position: absolute;
+            right: auto;
+            bottom: auto;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            font-family: $font-title;
+            text-align: right;
+        }
+        li {
+            display: inline-block;
+            margin-right: 36px;
+            position: relative;
+            justify-content: right;
+        }
+        a {
+            text-decoration: none;
+            color: $color-dark;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+
+

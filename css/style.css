@@ -1,0 +1,113 @@
+/*Variables*/
+/*Global*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  background: #ffffff;
+  color: #222222;
+}
+
+.page-title {
+  font-size: 58px;
+  margin: 0 0 72px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.page-subtitle {
+  font-size: 15px;
+  margin: 10px 0 50px 0;
+  font-family: "Noto Serif", serif;
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 160px;
+  margin: 24px auto 0 auto;
+  padding: 16px;
+  border-radius: 5px;
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid;
+  background-position: 100% 0;
+  background-size: 300%;
+  position: relative;
+}
+
+.btn:hover {
+  background-position: 0 100%;
+  color: #ffffff;
+}
+
+/*Splash*/
+.splash {
+  min-height: 700px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.splash .splash-inner {
+  margin: auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.splash .splash-inner .row {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: absolute;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash .splash-inner ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  text-align: right;
+}
+
+.splash .splash-inner li {
+  display: inline-block;
+  margin-right: 36px;
+  position: relative;
+  -ms-flex-pack: right;
+      justify-content: right;
+}
+
+.splash .splash-inner a {
+  text-decoration: none;
+  color: #222222;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
