@@ -1,0 +1,76 @@
+/*Variables*/
+$color-main: #7bed9f;
+$color-second: #ff6b81;
+$color-third: #70a1ff;
+$color-dark: #747d8c;
+$color-light: #ffffff;
+
+$font-text: 'Inconsolata', monospace;
+$font-header: 'Signika', sans-serif;
+
+$transition: all 1s;
+
+/*Global*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;    
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+    text-align: left;
+    background: #fff;
+    color: $color-dark;
+}
+
+section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-title {
+    font-size: 48px;
+    margin: 0 0 72px 0;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    margin: 10px 0 0px 0;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-text;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid;
+    background-position: 100% 0;
+    background-size: 300%;
+    position: relative;
+}
+
+.btn:hover {
+    background-position: 0 100%; 
+    color: $color-light;
+    transition: $transition;
+}
