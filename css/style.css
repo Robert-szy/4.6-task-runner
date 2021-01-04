@@ -146,4 +146,15 @@ section {
   padding-top: 90px;
   font-weight: 100;
 }
+
+/*Services*/
+.services i {
+  font-size: 38px;
+  background: #ffffff;
+  width: 73px;
+  height: 73px;
+  line-height: 73px;
+  color: #FED136;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */

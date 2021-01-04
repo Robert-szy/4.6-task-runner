@@ -2,6 +2,7 @@
 
 $color-dark: #222222;
 $color-light: #ffffff;
+$color-yellow: #FED136;
 
 $font-logo: 'Rouge Script', cursive;
 $font-title: 'Montserrat', sans-serif;
@@ -61,11 +62,11 @@ section {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid #FED136;
+    border: 2px solid $color-yellow;
     background-position: 100% 0;
     background-size: 300%;
     position: relative;
-    background-color:  #FED136;
+    background-color: $color-yellow;
     color: $color-light;
     font-weight: 600;
 }
@@ -111,7 +112,7 @@ section {
                 text-align: left;
                 a {
                     font-family: $font-logo;
-                    color: #FED136;
+                    color: $color-yellow;
                     font-size: 30px;
                     font-weight: 600;
                 }
@@ -140,6 +141,19 @@ section {
     }
 }
 
+/*Services*/
+
+.services {
+    i {
+        font-size: 38px;
+        background: $color-light;
+        width: 73px;
+        height: 73px;
+        line-height: 73px;
+        color: $color-yellow;
+        border-radius: 50%;
+    }
+}
 
 
 
