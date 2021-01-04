@@ -24,14 +24,14 @@ body {
 }
 
 .page-title {
-    font-size: 58px;
-    margin: 0 0 72px 0;
+    font-size: 68px;
+    margin: 0;
     font-family: $font-title;
 }
 
 .page-subtitle {
-    font-size: 15px;
-    margin: 10px 0 50px 0;
+    font-size: 38px;
+    margin: 0;
     font-family: $font-subtitle;
 }
 
@@ -52,24 +52,22 @@ section {
 
 .btn {
     display: inline-block;
-    min-width: 160px;
+    min-width: 240px;
     margin: 24px auto 0 auto;
     padding: 16px;
     border-radius: 5px;
-    font-family: $font-text;
+    font-family: $font-title;
     font-size: 16px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid;
+    border: 2px solid #FED136;
     background-position: 100% 0;
     background-size: 300%;
     position: relative;
-}
-
-.btn:hover {
-    background-position: 0 100%; 
+    background-color:  #FED136;
     color: $color-light;
+    font-weight: 600;
 }
 
 /*Splash*/
@@ -81,33 +79,64 @@ section {
         margin: auto;    
         max-width: 100%;
         position: relative;
+        display: flex;
+        .menu{
+            position: absolute;
+            right: 230px;
+            left: 230px;
+            top: 50px;
+            display: flex;
+            justify-content: space-between;
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                font-family: $font-title;
+                flex: auto;
+                text-align: right;
+                li {
+                    display: inline-block;
+                    margin-right: 36px;
+                    position: relative;
+                    a {
+                        text-decoration: none;
+                        font-family: $font-title;
+                        color: $color-light;
+                        margin: 0 auto;
+                        line-height: 30px;
+                    }
+                }
+            }
+            ul:first-child {
+                text-align: left;
+                a {
+                    font-family: $font-logo;
+                    color: #FED136;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
         .row {
+            max-width: inherit;
             flex-direction: column;
             position: absolute;
             right: auto;
             bottom: auto;
-            left: 50%;
+            left: 40%;
             top: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-30%, -50%);
+            .page-title {
+                color: $color-light;
+                padding-top: 5px;
+            }
+            .page-subtitle {
+                color: $color-light;
+                padding-top: 90px;
+                font-weight: 100;
+            }    
         }
-        ul {
-            padding: 0;
-            margin: 0;
-            list-style-type: none;
-            font-family: $font-title;
-            text-align: right;
-        }
-        li {
-            display: inline-block;
-            margin-right: 36px;
-            position: relative;
-            justify-content: right;
-        }
-        a {
-            text-decoration: none;
-            color: $color-dark;
-            margin: 0 auto;
-        }
+        
     }
 }
 
