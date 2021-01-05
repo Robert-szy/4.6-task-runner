@@ -2,8 +2,9 @@
 
 $color-dark: #222222;
 $color-light: #ffffff;
-$color-yellow: #FED136;
-$color-grey: #777777;
+$color-button: #FED136;
+$color-text: #777777;
+$color-portfolio: #F7F7F7;
 
 $font-logo: 'Rouge Script', cursive;
 $font-title: 'Montserrat', sans-serif;
@@ -25,16 +26,18 @@ body {
     color: $color-dark;
 }
 
-.page-title {
-    font-size: 68px;
-    margin: 0;
+h1 {
     font-family: $font-title;
+    size: 29px;
+    line-height: 1;
+    padding-bottom: 10px;
 }
 
-.page-subtitle {
-    font-size: 38px;
-    margin: 0;
+h2 {
     font-family: $font-subtitle;
+    font-size: 22px;
+    color: $color-text;
+    padding-bottom: 80px;
 }
 
 section {
@@ -42,15 +45,9 @@ section {
     padding-bottom: 96px;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
+
+
 
 .btn {
     display: inline-block;
@@ -63,17 +60,16 @@ section {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    border: 2px solid $color-yellow;
+    border: 2px solid $color-button;
     background-position: 100% 0;
     background-size: 300%;
     position: relative;
-    background-color: $color-yellow;
+    background-color: $color-button;
     color: $color-light;
     font-weight: 600;
 }
 
 /*Splash*/
-
 .splash {
     min-height: 700px;
     display: flex;
@@ -113,7 +109,7 @@ section {
                 text-align: left;
                 a {
                     font-family: $font-logo;
-                    color: $color-yellow;
+                    color: $color-button;
                     font-size: 30px;
                     font-weight: 600;
                 }
@@ -129,54 +125,54 @@ section {
             top: 50%;
             transform: translate(-30%, -50%);
             .page-title {
+                font-size: 68px;
+                margin: 0;
+                font-family: $font-title;
                 color: $color-light;
                 padding-top: 5px;
             }
             .page-subtitle {
+                font-size: 38px;
+                margin: 0;
+                font-family: $font-subtitle;
                 color: $color-light;
                 padding-top: 90px;
                 font-weight: 100;
-            }    
+            }
         }
         
     }
 }
 
 /*Services*/
-
 .services {
+    h3 {
+        font-family: $font-title;
+        font-size: 22px;
+    }
     i {
         font-size: 38px;
         background: $color-light;
         width: 73px;
         height: 73px;
         line-height: 73px;
-        color: $color-yellow;
+        color: $color-button;
         border-radius: 50%;
-        border: 4px solid $color-yellow;
-    }
-    h1 {
-        font-family: $font-title;
-        size: 29px;
-        line-height: 1;
-        padding-bottom: 10px;
-    }
-    h2 {
-        font-family: $font-subtitle;
-        font-size: 22px;
-        color: $color-grey;
-        padding-bottom: 80px;
-    }
-    h3 {
-        font-family: $font-title;
-        font-size: 22px;
+        border: 4px solid $color-button;
     }
     p {
         font-family: $font-text;
         font-size: 16px;
-        color: $color-grey; 
+        color: $color-text; 
     }
 }
 
-
+/*Portfolio*/
+.portfolio {
+    min-height: 1218px;
+    background-color: $color-portfolio;
+    .card {
+        background-color: $color-light;
+    }
+}
 
